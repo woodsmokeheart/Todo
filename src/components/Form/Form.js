@@ -33,10 +33,6 @@ const Form = ({ inputText, setInputText, todos, setTodos, setStatus }) => {
           type="submit"
         >
           Create
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
         </button>
       </div>
       <div className={css.select}>

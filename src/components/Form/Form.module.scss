@@ -4,10 +4,10 @@
   align-items: center;
   margin-bottom: 35px;
 }
+
 .inputContainer {
   display: flex;
   flex-direction: column;
-  margin-bottom: 10px;
 }
 
 .inputbox {
@@ -36,6 +36,9 @@
   text-transform: uppercase;
   border: 1px solid rgba(255, 255, 255, 0.25);
   transition: all 0.3s;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
 
   &:hover {
     border: 1px solid antiquewhite;

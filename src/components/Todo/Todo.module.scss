@@ -28,6 +28,12 @@
   }
 }
 
+.text,
+.showText {
+  font-size: 18px;
+  color: antiquewhite;
+}
+
 .text {
   height: 80px;
   overflow: hidden;
@@ -42,6 +48,7 @@
   display: flex;
   justify-content: center;
   margin-bottom: 3px;
+
   &:hover {
     transform: rotate(360deg);
     transition: 1s;
