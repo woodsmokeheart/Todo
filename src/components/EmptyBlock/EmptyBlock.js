@@ -1,8 +1,10 @@
 import React from "react";
 import css from "./EmptyBlock.module.scss";
+import { useTranslation } from "react-i18next";
 
 function EmptyBlock() {
-  return <p className={css.text}>Write your first task</p>;
+  const { t } = useTranslation();
+  return <p className={css.text}>{t("Write your first task")}</p>;
 }
 
 export default EmptyBlock;

@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import css from "./MainLayout.module.scss";
 import Form from "../Form/Form";
 import TodoList from "../TodoList/TodoList";
+import { useTranslation } from "react-i18next";
+import { ButtonTranslate } from "../ButtonTranslate/ButtonTranslate";
 
 function MainLayout() {
   const [inputText, setInputText] = useState("");
@@ -49,6 +51,7 @@ function MainLayout() {
 
   return (
     <div className={css.wrapper}>
+      <ButtonTranslate />
       <Header />
       <Form
         todos={todos}
@@ -68,9 +71,10 @@ function MainLayout() {
 export default MainLayout;
 
 export function Header() {
+  const { t } = useTranslation();
   return (
     <div className={css.header}>
-      <span className={css.title}>Your Todo</span>
+      <span className={css.title}>{t("Your Todo")}</span>
     </div>
   );
 }

@@ -1,7 +1,10 @@
 import React from "react";
 import css from "./Form.module.scss";
+import { useTranslation } from "react-i18next";
 
 const Form = ({ inputText, setInputText, todos, setTodos, setStatus }) => {
+  const { t } = useTranslation();
+
   const inputTextHandler = (e) => {
     setInputText(e.target.value);
   };
@@ -24,7 +27,7 @@ const Form = ({ inputText, setInputText, todos, setTodos, setStatus }) => {
             value={inputText}
             onChange={inputTextHandler}
             type="text"
-            placeholder="Add task..."
+            placeholder={t("Add task...")}
           />
         </div>
         <button
@@ -32,14 +35,14 @@ const Form = ({ inputText, setInputText, todos, setTodos, setStatus }) => {
           onClick={submitTodoHandler}
           type="submit"
         >
-          Create
+          {t("Create")}
         </button>
       </div>
       <div className={css.select}>
         <select className={css.filter} onChange={statusHandler} name="todos">
-          <option value="all">All</option>
-          <option value="completed">Completed</option>
-          <option value="uncompleted">Uncompleted</option>
+          <option value="all">{t("All")}</option>
+          <option value="completed">{t("Completed")}</option>
+          <option value="uncompleted">{t("Uncompleted")}</option>
         </select>
       </div>
     </form>
