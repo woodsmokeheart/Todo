@@ -21,7 +21,7 @@ const Todo = ({ text, todos, setTodos, todo }) => {
   };
   return (
     <div className={css.todo}>
-      <h4 className={show ? css.showText : css.text}>{text}</h4>
+      <p className={show ? css.showText : css.text}>{text}</p>
       <div>
         <button className={css.button} onClick={completeHandler}>
           <i className="ri-add-circle-line"></i>
