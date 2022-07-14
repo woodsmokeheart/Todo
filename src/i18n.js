@@ -17,8 +17,8 @@ const translationRu = {
   "Add task...": "Добавить задачу...",
   Create: "Создать",
   All: "Все",
-  Completed: "Завершенные",
-  Uncompleted: "Незавершенные",
+  Completed: "Завершено",
+  Uncompleted: "Незавершено",
 };
 
 i18n

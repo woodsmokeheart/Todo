@@ -1,7 +1,4 @@
 .todo {
-  display: flex;
-  align-items: start;
-  justify-content: space-between;
   box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
   position: relative;
   z-index: 1;
@@ -37,23 +34,35 @@
 .text {
   height: 80px;
   overflow: hidden;
-  margin-right: 10px;
 }
 
 .showText {
   height: "100%";
 }
 
-.button {
+.buttons {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid antiquewhite;
   display: flex;
-  justify-content: center;
-  margin-bottom: 3px;
+  justify-content: space-between;
+  align-items: center;
+}
 
+.status {
+  display: flex;
+  span {
+    font-size: 13px;
+    font-weight: bold;
+  }
+}
+
+.button {
   &:hover {
     transform: rotate(360deg);
     transition: 1s;
   }
   i {
-    font-size: 25px;
+    font-size: 20px;
   }
 }
