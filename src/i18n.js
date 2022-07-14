@@ -12,7 +12,7 @@ const translationEn = {
   uncompleted: "Uncompleted",
 };
 const translationRu = {
-  "Your Todo": "Твой список дел",
+  "Your Todo": "Cписок дел",
   "Write your first task": "Создай свою первую задачу",
   "Add task...": "Добавить задачу...",
   Create: "Создать",
