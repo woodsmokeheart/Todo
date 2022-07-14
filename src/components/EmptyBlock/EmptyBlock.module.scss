@@ -1,7 +1,17 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .text {
   margin-top: 30px;
   text-align: center;
-  font-size: 27px;
-  font-weight: bold;
+  font-size: 22px;
   color: #464d4d;
+}
+
+.img{
+  filter: invert(0.4);
 }
