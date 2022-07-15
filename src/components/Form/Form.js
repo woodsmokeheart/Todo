@@ -10,11 +10,20 @@ const Form = ({ inputText, setInputText, todos, setTodos, setStatus }) => {
   };
   const submitTodoHandler = (e) => {
     e.preventDefault();
-    setTodos([
-      ...todos,
-      { text: inputText, completed: false, id: Math.random() * 1000 },
-    ]);
-    setInputText("");
+    if (!(inputText === "")) {
+      setTodos([
+        ...todos,
+        {
+          text: inputText,
+          completed: false,
+          id: Math.random() * 1000,
+          date: new Date().toLocaleDateString(),
+        },
+      ]);
+      setInputText("");
+    } else {
+      alert(t("Kindly specify your task first."));
+    }
   };
   const statusHandler = (e) => {
     setStatus(e.target.value);

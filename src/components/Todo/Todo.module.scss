@@ -7,7 +7,7 @@
   padding: 15px;
   color: antiquewhite;
   margin-bottom: 25px;
-  width: 370px;
+  width: 360px;
   border-radius: 25px;
 
   &:before {
@@ -42,7 +42,7 @@
 
 .buttons {
   margin-bottom: 10px;
-  padding-bottom: 10px;
+  padding: 0 5px 10px;
   border-bottom: 1px solid antiquewhite;
   display: flex;
   justify-content: space-between;
@@ -58,11 +58,21 @@
 }
 
 .button {
+  width: 20px;
+  height: 20px;
+  margin-left: 5px;
   &:hover {
     transform: rotate(360deg);
     transition: 1s;
   }
-  i {
-    font-size: 20px;
-  }
+}
+
+.date {
+  border-top: 1px solid antiquewhite;
+  padding: 10px 5px 0;
+  margin-top: 10px;
+  font-size: 13px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
 }

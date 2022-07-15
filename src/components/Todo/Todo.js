@@ -3,6 +3,7 @@ import css from "./Todo.module.scss";
 import { useTranslation } from "react-i18next";
 
 const Todo = ({ text, todos, setTodos, todo }) => {
+  const { t } = useTranslation();
   const [show, setShow] = useState(false);
   const deleteHandler = () => {
     setTodos(todos.filter((el) => el.id !== todo.id));
@@ -31,6 +32,10 @@ const Todo = ({ text, todos, setTodos, todo }) => {
         todo={todo}
       />
       <p className={show ? css.showText : css.text}>{text}</p>
+      <div className={css.date}>
+        <span>{t("Creation date:")}</span>
+        <span>{todo.date}</span>
+      </div>
     </div>
   );
 };
@@ -55,14 +60,14 @@ function Buttons({
       </div>
       <div>
         <button className={css.button} onClick={completeHandler}>
-          <i className="ri-checkbox-circle-line" />
+          <img className={css.img} src="/images/icoAdd.png" alt="language" />
         </button>
         <button className={css.button} onClick={deleteHandler}>
-          <i className="ri-close-circle-line" />
+          <img className={css.img} src="/images/icoDelete.png" alt="language" />
         </button>
         {text.length >= 84 ? (
           <button className={css.button} onClick={() => setShow(!show)}>
-            <i className={show ? "ri-eye-2-line" : "ri-eye-2-fill"} />
+            <img className={css.img} src="/images/icoInfo.png" alt="language" />
           </button>
         ) : null}
       </div>

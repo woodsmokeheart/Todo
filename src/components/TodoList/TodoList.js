@@ -6,7 +6,7 @@ function TodoList({ todos, setTodos, filteredTodos }) {
   const reversed = filteredTodos.map((item) => item).reverse();
   return (
     <>
-      {todos.length >= 1 ? (
+      {todos.length > 0 ? (
         <>
           {reversed.map((todo) => (
             <Todo

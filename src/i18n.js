@@ -10,6 +10,8 @@ const translationEn = {
   All: "All",
   Completed: "Completed",
   uncompleted: "Uncompleted",
+  "Kindly specify your task first.": "Kindly specify your task first.",
+  "Creation date:": "Creation date:",
 };
 const translationRu = {
   "Your Todo": "Cписок дел",
@@ -19,6 +21,8 @@ const translationRu = {
   All: "Все",
   Completed: "Завершено",
   Uncompleted: "Незавершено",
+  "Kindly specify your task first.": "Сначала укажите свою задачу.",
+  "Creation date:": "Дата создания:",
 };
 
 i18n
