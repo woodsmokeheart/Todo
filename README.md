@@ -1,4 +1,4 @@
-<img src="/images/icoInfo.png" width="200" height="50"/>
+<img src="resources/icoInfo.png" width="200" height="50"/>
 
 
 # Getting Started with Create React App
