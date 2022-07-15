@@ -51,7 +51,7 @@ function MainLayout() {
 
   return (
     <div className={css.wrapper}>
-      {/* <ButtonTranslate /> */}
+      <ButtonTranslate />
       <Header />
       <Form
         todos={todos}
